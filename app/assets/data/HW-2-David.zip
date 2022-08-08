@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard assignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="icon" href="./assets/images/title-logo-ANSWER.png">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="d-flex justify-content-between">
+      <header class="sidebar d-flex flex-column justify-content-between py-4">
+        <nav>
+          <h1 class="px-4 mb-ml">
+            <a href="index.html" class="logo">ANSWER</a>
+          </h1>
+          <ul class="nav">
+            <li>
+              <a href="#" class="nav-link d-flex align-items-center line-left-hover fw-bold py-xs px-4 disabled">
+                <span class="material-icons fs-4 me-2">
+                  terrain
+                </span>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link d-flex align-items-center line-left-hover fw-bold py-xs px-4 disabled">
+                <span class="material-icons fs-4 me-2">
+                  follow_the_signs
+                </span>
+                Question
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class="active nav-link d-flex align-items-center fw-bold line-left-hover py-xs px-4">
+                <span class="material-icons fs-4 me-2">
+                  auto_stories
+                </span>
+                Assignment
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link d-flex align-items-center line-left-hover fw-bold py-xs px-4 disabled">
+                <span class="material-icons fs-4 me-2">
+                  sports_kabaddi
+                </span>
+                Course
+              </a>
+            </li>
+            <li>
+              <a href="admin.html" class=" nav-link d-flex align-items-center fw-bold line-left-hover py-xs px-4">
+                <span class="material-icons fs-4 me-2">
+                  groups
+                </span>
+                Admin
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link d-flex align-items-center line-left-hover fw-bold py-xs px-4 disabled">
+                <span class="material-icons fs-4 me-2">
+                  self_improvement
+                </span>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="d-flex ms-4">
+          <img src="./assets/images/kent.jpeg" alt="Nate 大頭照" class="head-shot-img rounded-pill">
+          <div class="ms-1">
+            <h4 class="fs-2 fw-bold lh-sm">Kent (You)</h4>
+            <a href="mailto:" class="fs-1 text-muted">andy0401@mail.com</a>
+          </div>
+        </div>
+      </header>
+      <!-- assignment -->
+<main class="w-100 p-4">
+  <div class="d-flex flex-column justify-content-between h-100">
+    <div>
+      <nav class="d-flex align-items-center justify-content-between mb-3">
+        <div class="d-flex align-items-center">
+          <h2 class="fs-4 fw-bold me-6">Assignment</h2>
+          <div class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle position-relative fw-bold p-0 pe-1" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="align-middle">All Courses</span>
+              <span class="material-icons-outlined fs-4 text-primary position-absolute top-50 translate-middle-y">expand_more</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="javascript:;">切板直播班</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:;">JS 直播班</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="nav d-flex">
+          <li class="nav-item">
+            <a class="nav-link py-0" href="javascript:;"><span class="material-icons-outlined d-block">search</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link pe-0 py-0" href="javascript:;"><span class="material-icons d-block">notifications_active</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="row">
+        <aside class="col-lg-4">
+          <div class="dropdown mb-xxs">
+            <a href="javascript:;" class="dropdown-toggle position-relative fw-bold p-0" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="align-middle">All (4)</span>
+              <span class="material-icons-outlined text-primary fs-4 position-absolute top-50 translate-middle-y">expand_more</span>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="javascript:;">Week 1 Assignment</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:;">Week 2 Assignment</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:;">Week 3 Assignment</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="javascript:;">Final Assignment</a></li>
+            </ul>
+          </div>
+          <div class="list-group" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a href="#msg1" class="list-group-item list-group-item-action list-group-item-info text-dark active" data-bs-toggle="list" role="tab" aria-controls="msg1" aria-selected="true" aria-current="true" >
+              <div class="d-flex w-100 justify-content-between align-items-center mb-xxs">
+                <h4 class="fs-1">Week 1 Assignment</h4>
+                <span class="fs-1">4 hrs ago</span>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h3 class="fs-2 fw-bold">Please check this file…</h3>
+                <span class="fs-1 text-muted">Emily Wang</span>
+              </div>
+            </a>
+            <a href="#msg2" class="list-group-item list-group-item-action list-group-item-info text-dark" data-bs-toggle="list" role="tab" aria-controls="msg2" aria-selected="false" aria-current="true">
+              <div class="d-flex w-100 justify-content-between align-items-center mb-xxs">
+                <h4 class="fs-1">Week 2 Assignment</h4>
+                <span class="fs-1">12 hrs ago</span>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h3 class="fs-2 fw-bold">My Homework</h3>
+                <span class="fs-1 text-muted">Nate</span>
+              </div>
+            </a>
+            <a href="#msg3" class="list-group-item list-group-item-action list-group-item-info text-dark" data-bs-toggle="list" role="tab" aria-controls="msg3" aria-selected="false" aria-current="true" >
+              <div class="d-flex w-100 justify-content-between align-items-center mb-xxs">
+                <h4 class="fs-1">Week 3 Assignment</h4>
+                <span class="fs-1">18 hrs ago</span>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h3 class="fs-2 fw-bold">Have a problem with this…</h3>
+                <span class="fs-1 text-muted">Tori</span>
+              </div>
+            </a>
+            <a href="#msg4" class="list-group-item list-group-item-action list-group-item-info text-dark" data-bs-toggle="list" role="tab" aria-controls="msg4" aria-selected="false" aria-current="true" >
+              <div class="d-flex w-100 justify-content-between align-items-center mb-xxs">
+                <h4 class="fs-1">Final Assignment</h4>
+                <span class="fs-1">19 hrs ago</span>
+              </div>
+              <div class="d-flex w-100 justify-content-between align-items-center">
+                <h3 class="fs-2 fw-bold">Did I do it right?</h3>
+                <span class="fs-1 text-muted">recall</span>
+              </div>
+            </a>
+          </div>
+        </aside>
+        <section class="col-lg-8">
+          <div class="tab-content" id="v-pills-tabContent">
+            <section class="tab-pane fade show active" id="msg1" role="tabpanel" aria-labelledby="msg1">
+              <div class="text-end mb-xxs">
+                <snap class="fs-1 text-muted lh-lg">2 comments</span>
+              </div>
+              <div class="card boder-secondary rounded">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <h3 class="fs-1 mb-xxs">
+                      Week 1 Assignment / HTML&amp;CSS
+                    </h3>
+                    <h4 class="fs-2 fw-bold">
+                      Please check this file for me, thanks!
+                    </h4>
+                  </div>
+                  <a href="#">
+                    <span class="material-icons-outlined fs-4">
+                      more_vert
+                    </span>
+                  </a>
+                </div>
+                <ol class="card-body pe-4">
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/emilywang.jpeg" alt="Emily Wang 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <h4 class="fs-2 fw-bold">Emily Wang</h4>
+                        <time class="d-inline-block fs-1 text-muted mb-2">10:38 AM (4 hours ago)</time>
+                        <p class="fs-s mb-2">
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <mark>div</mark> 
+                          is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                          <br>
+                          What is the gap or extra space below image?
+                        </p>
+                        <a href="#" class="btn btn-outline-light text-dark border rounded-1 py-1 px-2 ps-xs" download="HW-2-David.zip">
+                          <span class="fw-bold d-flex">
+                            <span class="material-icons-outlined fs-4 me-1">
+                              attach_file
+                            </span>
+                            HW-2-David.zip
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/kent.jpeg" alt="Nate 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <h4 class="fs-2 fw-bold">Kent (You)</h4>
+                            <time class="fs-1 text-muted">13:24 AM (1 hours ago)</time>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <a href="javascript:;" class="me-4">
+                              <span class="material-icons d-block fs-4">star_border</span>
+                            </a>
+                            <a href="javascript:;">
+                              <span class="material-icons d-block fs-4">create</span>
+                            </a>
+                          </div>
+                        </div>
+                        <p class="fs-s mb-ml">
+                          Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                        </p>
+                        <p class="fs-s mb-ml">You can: </p>
+                        <ul class="fs-s">
+                          <li>
+                            • adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> ) or 
+                          </li>
+                          <li>
+                            • change the <mark>display</mark> so it isn’t inline.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+            <section class="tab-pane fade" id="msg2" role="tabpanel" aria-labelledby="msg2">
+              <div class="text-end mb-xxs">
+                <snap class="fs-1 text-muted lh-lg">2 comments</span>
+              </div>
+              <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <h3 class="fs-1 mb-xxs">
+                      Week 2 Assignment / HTML&amp;CSS
+                    </h3>
+                    <h4 class="fs-2 fw-bold">
+                      My Homework
+                    </h4>
+                  </div>
+                  <a href="#">
+                    <span class="material-icons-outlined fs-4">
+                      more_vert
+                    </span>
+                  </a>
+                </div>
+                <ol class="card-body pe-4">
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/nate.jpg" alt="Nate 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <h4 class="fs-2 fw-bold">Nate</h4>
+                        <time class="d-inline-block fs-1 text-muted mb-2">10:38 AM (4 hours ago)</time>
+                        <p class="fs-s mb-2">
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <mark>div</mark> 
+                          is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                          <br>
+                          What is the gap or extra space below image?
+                        </p>
+                        <a href="#" class="btn btn-outline-light text-dark border rounded-1 py-1 px-2 ps-xs" download="HW-2-David.zip">
+                          <span class="fw-bold d-flex">
+                            <span class="material-icons-outlined fs-4 me-1">
+                              attach_file
+                            </span>
+                            HW-2-David.zip
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/kent.jpeg" alt="Nate 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <h4 class="fs-2 fw-bold">Kent (You)</h4>
+                            <time class="fs-1 text-muted">13:24 AM (1 hours ago)</time>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <a href="javascript:;" class="me-4">
+                              <span class="material-icons d-block fs-4">star_border</span>
+                            </a>
+                            <a href="javascript:;">
+                              <span class="material-icons d-block fs-4">create</span>
+                            </a>
+                          </div>
+                        </div>
+                        <p class="fs-s mb-ml">
+                          Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                        </p>
+                        <p class="fs-s mb-ml">You can: </p>
+                        <ul class="fs-s">
+                          <li>
+                            • adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> ) or 
+                          </li>
+                          <li>
+                            • change the <mark>display</mark> so it isn’t inline.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+            <section class="tab-pane fade" id="msg3" role="tabpanel" aria-labelledby="msg3">
+              <div class="text-end mb-xxs">
+                <snap class="fs-1 text-muted lh-lg">2 comments</span>
+              </div>
+              <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <h3 class="fs-1 mb-xxs">
+                      Week 3 Assignment / HTML&amp;CSS
+                    </h3>
+                    <h4 class="fs-2 fw-bold">
+                      Have a problem with this…
+                    </h4>
+                  </div>
+                  <a href="#">
+                    <span class="material-icons-outlined fs-4">
+                      more_vert
+                    </span>
+                  </a>
+                </div>
+                <ol class="card-body pe-4">
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/Tori.png" alt="Tori 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <h4 class="fs-2 fw-bold">Tori</h4>
+                        <time class="d-inline-block fs-1 text-muted mb-2">10:38 AM (4 hours ago)</time>
+                        <p class="fs-s mb-2">
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <mark>div</mark> 
+                          is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                          <br>
+                          What is the gap or extra space below image?
+                        </p>
+                        <a href="#" class="btn btn-outline-light text-dark border rounded-1 py-1 px-2 ps-xs" download="HW-2-David.zip">
+                          <span class="fw-bold d-flex">
+                            <span class="material-icons-outlined fs-4 me-1">
+                              attach_file
+                            </span>
+                            HW-2-David.zip
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/kent.jpeg" alt="Nate 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <h4 class="fs-2 fw-bold">Kent (You)</h4>
+                            <time class="fs-1 text-muted">13:24 AM (1 hours ago)</time>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <a href="javascript:;" class="me-4">
+                              <span class="material-icons d-block fs-4">star_border</span>
+                            </a>
+                            <a href="javascript:;">
+                              <span class="material-icons d-block fs-4">create</span>
+                            </a>
+                          </div>
+                        </div>
+                        <p class="fs-s mb-ml">
+                          Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                        </p>
+                        <p class="fs-s mb-ml">You can: </p>
+                        <ul class="fs-s">
+                          <li>
+                            • adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> ) or 
+                          </li>
+                          <li>
+                            • change the <mark>display</mark> so it isn’t inline.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+            <section class="tab-pane fade" id="msg4" role="tabpanel" aria-labelledby="msg4">
+              <div class="text-end mb-xxs">
+                <snap class="fs-1 text-muted lh-lg">2 comments</span>
+              </div>
+              <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                  <div>
+                    <h3 class="fs-1 mb-xxs">
+                      Final Assignment / HTML&amp;CSS
+                    </h3>
+                    <h4 class="fs-2 fw-bold">
+                      Did I do it right?
+                    </h4>
+                  </div>
+                  <a href="#">
+                    <span class="material-icons-outlined fs-4">
+                      more_vert
+                    </span>
+                  </a>
+                </div>
+                <ol class="card-body pe-4">
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/recall.png" alt="recall 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <h4 class="fs-2 fw-bold">recall</h4>
+                        <time class="d-inline-block fs-1 text-muted mb-2">10:38 AM (4 hours ago)</time>
+                        <p class="fs-s mb-2">
+                          Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <mark>div</mark> 
+                          is bigger than the height of the <mark>img</mark> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                          <br>
+                          What is the gap or extra space below image?
+                        </p>
+                        <a href="#" class="btn btn-outline-light text-dark border rounded-1 py-1 px-2 ps-xs" download="HW-2-David.zip">
+                          <span class="fw-bold d-flex">
+                            <span class="material-icons-outlined fs-4 me-1">
+                              attach_file
+                            </span>
+                            HW-2-David.zip
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mb-2">
+                    <div class="d-flex justify-content-start mb-2">
+                      <div class="card-img w-auto">
+                        <img src="./assets/images/kent.jpeg" alt="Nate 大頭照" class="head-shot-img rounded-pill">
+                      </div>
+                      <div class="card-border ms-1">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <h4 class="fs-2 fw-bold">Kent (You)</h4>
+                            <time class="fs-1 text-muted">13:24 AM (1 hours ago)</time>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <a href="javascript:;" class="me-4">
+                              <span class="material-icons d-block fs-4">star_border</span>
+                            </a>
+                            <a href="javascript:;">
+                              <span class="material-icons d-block fs-4">create</span>
+                            </a>
+                          </div>
+                        </div>
+                        <p class="fs-s mb-ml">
+                          Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+                        </p>
+                        <p class="fs-s mb-ml">You can: </p>
+                        <ul class="fs-s">
+                          <li>
+                            • adjust the <mark>vertical-align</mark> of the image to position it elsewhere (e.g. the <mark>middle</mark> ) or 
+                          </li>
+                          <li>
+                            • change the <mark>display</mark> so it isn’t inline.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+          </div>
+          <!-- collapse editor-->
+          <div class="collapse" id="collapseEditor">
+            <div class="w-100 position-relative">
+              <textarea id="editor" rows="12" cols="100"></textarea>
+              <div class="d-flex justify-content-end align-items-center mb-2 ckeditor-btn-group">
+                <button type="button" class="btn btn-outline-primary js-editor-cancel me-2" data-bs-toggle="collapse" data-bs-target="#collapseEditor">Cancel</button>
+                <button type="button" class="btn btn-primary">Reply</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>    
+    </div>
+    <div class="col-lg-8 ms-auto">
+      <div class="d-flex justify-content-between align-items-center js-operation-btns mt-2">
+        <div class="d-flex">
+          <a href="#" class="me-3">
+            <span class="material-icons-outlined d-block fs-4">
+              chevron_left
+            </span>
+          </a>
+          <a href="#">
+            <span class="material-icons-outlined d-block fs-4">
+              chevron_right
+            </span>
+          </a>
+        </div>
+        <div class="d-flex">
+          <button type="button" class="btn btn-outline-primary me-2">Mark as read</button>
+          <button type="button" class="btn btn-primary js-editor-open" data-bs-toggle="collapse" data-bs-target="#collapseEditor" aria-expanded="false" aria-controls="collapseEditor">Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+    </div>
+    
+      <script src="./build/ckeditor.js"></script>
+      <script src="./assets/js/all.js"></script>
+    
+
+    <!-- <script src="./build/ckeditor.js"></script> -->
+    <script src="./assets/js/vendors.js"></script>
+    <!-- <script src="./assets/js/all.js"></script> -->
+    
+  </body>
+
+</html>
