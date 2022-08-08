@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <div class="menu bg-light d-flex flex-column justify-content-between">
+        <div class="menu-list py-7">
+          <h1 class="mb-7 ps-7">
+            <a href="index.html">
+              <img src="./assets/images/logo-ANSWER.svg" alt="logo">
+            </a>
+          </h1>
+          <ul>
+            <li class="mb-6 ps-7">
+              <a href="index.html" class="d-flex align-items-center fs-6 lh-base">
+                <span class="material-icons pe-3">
+                  assessment
+                </span>
+                Dashboard
+              </a>
+            </li>
+            <li class="mb-6 ps-7">
+              <a href="index.html" class="d-flex align-items-center fs-6 lh-base">
+                <span class="material-icons pe-3">
+                  question_answer
+                </span>
+                Question
+              </a>
+            </li>
+            <li class="mb-6 ps-7">
+              <a href="index.html" class="d-flex align-items-center fs-6 lh-base">
+                <span class="material-icons pe-3">
+                  assignment
+                </span>
+                Assignment
+              </a>
+            </li>
+            <li class="mb-6 ps-7">
+              <a href="index.html" class="d-flex align-items-center fs-6 lh-base">
+                <span class="material-icons pe-3">
+                  video_library
+                </span>
+                Course
+              </a>
+            </li>
+            <li class="mb-6 ps-7">
+              <a href="admin.html" class="d-flex align-items-center fs-6 lh-base">
+                <span class="material-icons pe-3">
+                  people
+                </span>
+                Admin
+              </a>
+            </li>
+            <li class="mb-6 ps-7">
+              <a href="index.html" class="d-flex align-items-center fs-6 lh-base">
+                <span class="material-icons pe-3">
+                  settings
+                </span>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="ps-7 pb-7">
+          <div class="d-flex align-items-center">
+            <div class="person-photo rounded-circle">person</div>
+            <div class="name ps-3">
+              <p class="fs-6 lh-base">Andy Chen</p>
+              <p class="fs-7 lh-base text-secondary">andy0401@mail.com</p>
+            </div>
+          </div>
+        </a>
+      </div>
+  
+      
+<div class="w-100 px-7 py-7">
+  <header class="d-flex align-items-center justify-content-between mb-8">
+    <div class="d-flex">
+      <h1 class="fs-4 lh-3 pe-8">Admin</h1>
+    <!-- Button trigger modal add New Admin-->
+    <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <span class="material-icons me-2 text-success">
+        add
+      </span>
+      Add New Admin
+    </button>
+
+    <!-- Modal add New Admin -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Add New Admin
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="d-flex align-items-center">
+      <a href="#">
+        <span class="material-icons">
+          search
+        </span>
+      </a>
+      <a class="ms-6" href="#">
+        <span class="material-icons">
+          notifications_active
+        </span>
+      </a>
+    </div>
+  </header>
+  <table class="table fs-6 lh-base mb-9">
+    <thead>
+      <tr class="border-bottom border-1 border-dark">
+        <th scope="col" class="d-flex align-items-center w-20">ID
+          <span class="material-icons text-success ms-2">
+            arrow_downward
+          </span>
+        </th>
+        <th scope="col" class="w-30">Name</th>
+        <th scope="col" class="w-30">Email</th>
+        <th scope="col" class="w-20">Verified</th>
+        <th scope="col" class="w-10"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#1</th>
+        <td>Emir Wicks</td>
+        <td>emir.wicks@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#2</th>
+        <td>Zaina Goldsmith</td>
+        <td>zaina.goldsmith@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#3</th>
+        <td>Mahima Lopez</td>
+        <td>mahima.lopez@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#4</th>
+        <td>Pharrell Murray</td>
+        <td>pharrell.murray@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#5</th>
+        <td>Annika Mcbride</td>
+        <td>annika.mcbride@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#6</th>
+        <td>Fatimah Clark</td>
+        <td>fatimah.clark@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#7</th>
+        <td>Klaudia Rhodes</td>
+        <td>klaudia.rhodes@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#8</th>
+        <td>Tillie Lucero</td>
+        <td>tillie.lucero@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#9</th>
+        <td>Sabrina Stephenson</td>
+        <td>sabrina.stephenson@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+      <tr class="border-bottom border-1 border-gray-400 py-4 align-middle">
+        <th scope="row">#10</th>
+        <td>Annie Smith</td>
+        <td>annie.smith@mail.com</td>
+        <td>Yes</td>
+        <td class="d-flex align-items-center justify-content-end">
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#previewModal">
+            <span class="material-icons">
+              remove_red_eye
+            </span>
+          </button>
+          <!-- Button trigger modal Edit-->
+          <button type="button" class="btn btn-white d-flex align-items-center fs-6 lh-base" data-bs-toggle="modal" data-bs-target="#editModal">
+            <span class="material-icons">
+              edit
+            </span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination  justify-content-end">
+      <li class="page-item">
+        <a class="page-link border border-1 border-success" href="#" aria-label="Previous">
+          <span class="material-icons fs-6 lh-base">
+            chevron_left
+          </span>
+        </a>
+      </li>
+      <li class="page-item active"><a class="page-link fs-6 lh-base border border-1 border-success text-dark" href="#">1</a></li>
+      <li class="page-item"><a class="page-link fs-6 lh-base border border-1 border-success text-dark" href="#">2</a></li>
+      <li class="page-item"><a class="page-link fs-6 lh-base border border-1 border-success text-dark" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link border border-1 border-success" href="#" aria-label="Next">
+          <span class="material-icons fs-6 lh-base">
+            navigate_next
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!-- Modal preview -->
+<div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        previewModal
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Edit -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        editModal
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
