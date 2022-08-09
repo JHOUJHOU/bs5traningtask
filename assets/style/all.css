@@ -7970,6 +7970,14 @@ fieldset:disabled .btn {
   width: 176px !important;
 }
 
+.w-141 {
+  width: 141px !important;
+}
+
+.w-24 {
+  width: 24px !important;
+}
+
 .mw-100 {
   max-width: 100% !important;
 }
@@ -8000,6 +8008,14 @@ fieldset:disabled .btn {
 
 .h-auto {
   height: auto !important;
+}
+
+.h-141 {
+  height: 141px !important;
+}
+
+.h-24 {
+  height: 24px !important;
 }
 
 .mh-100 {
@@ -9018,6 +9034,10 @@ fieldset:disabled .btn {
 
 .lh-3 {
   line-height: 3.09375 !important;
+}
+
+.lh-4 {
+  line-height: 0.9375 !important;
 }
 
 .text-start {
@@ -13236,6 +13256,7 @@ table {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
 }
 
 *,

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
@@ -375,16 +376,29 @@
 <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        previewModal
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="modal-body py-7 px-7 d-flex">
+        <img class="w-141 h-141 me-6" src="./assets/images/photo-3.avif" alt="Emir Wicks">
+        <div class="w-100">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            <p class="fs-6 lh-base">#1</p>
+            <a class="w-24 h-24" href="#">X
+              <!-- <span class="material-symbols">
+                close
+              </span> -->
+            </a>
+          </div>
+          <p class="fs-6 lh-base">Admin</p>
+          <p class="fs-4 lh-4 mb-2">Emir Wicks</p>
+          <p class="fs-7 lh-base mb-3 text-secondary">emir.wicks@mail.com</p>
+          <div class="d-flex align-items-center justify-content-between">
+            <p class="fs-7 lh-base px-2 py-1">Verified</p>
+            <a href="#">
+              <span class="material-symbols-rounded text-success">
+                expand_more
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
