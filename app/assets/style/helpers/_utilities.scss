@@ -150,6 +150,8 @@ $utilities: map-merge(
         40: 40%,
         60: 60%,
         176: 176px,
+        141: 141px,
+        24: 24px,
       )
     ),
     "max-width": (
@@ -175,7 +177,9 @@ $utilities: map-merge(
         50: 50%,
         75: 75%,
         100: 100%,
-        auto: auto
+        auto: auto,
+        141: 141px,
+        24: 24px,
       )
     ),
     "max-height": (
@@ -482,7 +486,8 @@ $utilities: map-merge(
         base: $line-height-base, // 24px 
         lg: $line-height-lg, // 32px
         2: $line-height-base * 1.3125, // 21px
-        3: $line-height-base * 2.0625 // 33px
+        3: $line-height-base * 2.0625, // 33px
+        4: $line-height-base * 0.625 // 36px
       )
     ),
     "text-align": (
